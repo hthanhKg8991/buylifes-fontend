@@ -1,7 +1,7 @@
 /**
  * Rebrand App
  */
-const SPColors = {
+const SNColors = {
     // Color Primary
     Color_Primary_01_100: "#0055B8",
     Color_Primary_02_100: "#3BD4AE",
@@ -26,4 +26,4 @@ const SPColors = {
     /** Color disable */
     Color_Text_03_100: "#8694A3",
 }
-export default SPColors;
+export default SNColors;

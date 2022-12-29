@@ -1,3 +1,3 @@
-export * from './SPButton';
-export * from './SPText';
-export * from './themes/spTextStyle';
+export * from './SNText';
+export * from './themes/SNTextStyle';
+export * from './themes/SNColorStyle';

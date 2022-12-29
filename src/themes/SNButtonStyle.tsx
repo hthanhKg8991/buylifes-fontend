@@ -2,8 +2,8 @@
  * Rebrand App
  */
 import { StyleSheet } from 'react-native';
-import Colors from './spColorStyle';
-export const SPButtonStyle = StyleSheet.create({
+import Colors from './SNColorStyle';
+export const SNButtonStyle = StyleSheet.create({
   // Button disable style
   Button_Style: {
     backgroundColor: Colors.Color_Primary_01_100,

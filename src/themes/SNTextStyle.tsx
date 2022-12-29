@@ -3,9 +3,9 @@
  */
 import { StyleSheet } from 'react-native';
 import { moderateScale, scale } from './scaling';
-import Colors from './spColorStyle';
-import Fonts from './spFontStyle';
-export const SPTextStyle = StyleSheet.create({
+import Colors from './SNColorStyle';
+import Fonts from './SNFontStyle';
+export const SNTextStyle = StyleSheet.create({
     // Text Header
     Text_Headline_01: {
         color: Colors.Color_Text_02_100,

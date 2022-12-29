@@ -12,9 +12,9 @@ import {
 } from 'react-native';
 
 import type { RneFunctionComponent } from '../helpers';
-import { SPText } from '../SPText';
-import { SPTextStyle } from '../themes/spTextStyle';
-import { SPButtonStyle } from '../themes/spButtonStyle';
+import { SNText } from '../SNText';
+import { SNTextStyle } from '../themes/SNTextStyle';
+import { SNButtonStyle } from '../themes/SNButtonStyle';
 import { scale } from '../themes/scaling';
 export interface ButtonProps
   extends TouchableOpacityProps,
@@ -26,15 +26,15 @@ export interface ButtonProps
   disabled?: boolean;
   disabledStyle?: object;
 }
-export const SPButton: RneFunctionComponent<ButtonProps> = ({
+export const SNButton: RneFunctionComponent<ButtonProps> = ({
   title = '',
   children = title,
-  titleStyle = SPTextStyle.Text_Small_06,
+  titleStyle = SNTextStyle.Text_Small_06,
   onPress = () => {},
   disabled = false,
-  disabledStyle = SPButtonStyle.Button_Disable_Style,
+  disabledStyle = SNButtonStyle.Button_Disable_Style,
 }) => {
-  titleStyle = disabled ? SPTextStyle.Text_Title_02 : SPTextStyle.Text_Title_03;
+  titleStyle = disabled ? SNTextStyle.Text_Title_02 : SNTextStyle.Text_Title_03;
   const handleOnPress = (evt: GestureResponderEvent) => {
     console.log('evt', disabled);
     if (!disabled) {
@@ -47,7 +47,7 @@ export const SPButton: RneFunctionComponent<ButtonProps> = ({
         onPress={handleOnPress}
         style={StyleSheet.flatten([
           {
-            ...SPButtonStyle.Button_Style,
+            ...SNButtonStyle.Button_Style,
             justifyContent: 'center',
             alignItems: 'center',
             height: scale(60),
@@ -56,7 +56,7 @@ export const SPButton: RneFunctionComponent<ButtonProps> = ({
           disabled && disabledStyle,
         ])}
       >
-        <SPText textStyle={[titleStyle]}>{children}</SPText>
+        <SNText textStyle={[titleStyle]}>{children}</SNText>
       </TouchableOpacity>
     </View>
   );
